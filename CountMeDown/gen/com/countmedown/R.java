@@ -794,13 +794,19 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070013;
+        public static final int abc_search_url_text_holo=0x7f070019;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
         public static final int aqua=0x7f07000c;
+        public static final int bar_cyan=0x7f070013;
+        public static final int bar_green=0x7f070014;
+        public static final int bar_orange=0x7f070016;
+        public static final int bar_red=0x7f070017;
+        public static final int bar_yellow=0x7f070015;
         public static final int black=0x7f070012;
         public static final int blue=0x7f070010;
+        public static final int button_grey=0x7f070018;
         public static final int fuchsia=0x7f070005;
         public static final int gray=0x7f070008;
         public static final int green=0x7f07000f;
@@ -997,8 +1003,9 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int row_bg=0x7f020058;
+        public static final int add=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int row_bg=0x7f020059;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1012,9 +1019,10 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050045;
         public static final int activity_chooser_view_content=0x7f050025;
+        public static final int add_event_button=0x7f050043;
         public static final int always=0x7f05000b;
+        public static final int background=0x7f050046;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
@@ -1031,8 +1039,8 @@ containing a value of this type.
         public static final int event_due=0x7f05003f;
         public static final int event_list=0x7f050042;
         public static final int event_name=0x7f05003e;
-        public static final int event_time_bar=0x7f050044;
-        public static final int event_title=0x7f050043;
+        public static final int event_time_bar=0x7f050045;
+        public static final int event_title=0x7f050044;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
         public static final int home=0x7f050014;
@@ -1171,7 +1179,9 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
+        public static final int background_title=0x7f0a0010;
         public static final int hello_world=0x7f0a000e;
+        public static final int toast_title=0x7f0a0011;
     }
     public static final class style {
         /** 
@@ -1197,6 +1207,7 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f0b0083;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b0084;
         /**  Mimic text appearance in select_dialog_item.xml 
