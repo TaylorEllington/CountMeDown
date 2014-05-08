@@ -11,7 +11,7 @@
     	    android:layout_height="match_parent" 
     	    android:id="@+id/edit"
     	    android:orientation="vertical"
-    	    android:visibility="visible">
+    	    android:visibility="gone">
     	    
     	    <EditText
     	        android:id="@+id/event_name"
@@ -22,18 +22,20 @@
     	   
     	    
     	    
-    	    <DatePicker 
+    	    <EditText 
     	        android:id="@+id/event_due"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content" 
     	        android:layout_weight="1"
+    	        android:inputType="date"
     	        />
     	    
     	    <EditText
     	        android:id="@+id/event_description"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content" 
-    	         android:layout_weight="3"/>
+    	         android:layout_weight="3"
+    	         />
         
     	</LinearLayout>
     
@@ -41,14 +43,14 @@
     	    android:layout_width="match_parent"
     	    android:layout_height="match_parent" 
     	    android:id="@+id/display"
-    	    android:visibility="gone">
+    	    android:visibility="visible">
     	    
     	    <ListView
     	        android:id="@+id/event_list"
     	        android:layout_width="match_parent"
     	        android:layout_height="match_parent" />
 
-"
+
         
    	 	</RelativeLayout>
     
