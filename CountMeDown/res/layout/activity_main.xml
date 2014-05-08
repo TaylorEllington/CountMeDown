@@ -9,18 +9,32 @@
     >
     
     	<LinearLayout
+    	    android:layout_gravity="center"
+    	    android:gravity="center_horizontal"
     	    android:layout_width="match_parent"
-    	    android:layout_height="match_parent" 
+    	    android:layout_height="wrap_content" 
     	    android:id="@+id/edit"
     	    android:orientation="vertical"
-    	    android:visibility="visible"
-    	    android:background="@color/grey">
+    	    android:visibility="gone"
+    	    android:background="@drawable/edit_bg">
+    	    
+    	    <TextView
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:text="Add New ToDo"
+    	        android:gravity="center_horizontal"
+    	        android:textSize="30dp"
+    	        android:textColor="#b3b3b3" 
+    	        android:paddingBottom="5dp"/>
     	    
     	    <EditText
     	        android:id="@+id/event_name"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content" 
-    	        android:layout_weight="1"/>
+    	        android:hint="Event Name"
+    	        android:inputType="text"
+    	         android:textColor="@color/button_grey"
+    	       />
     	    
     	   
     	    
@@ -29,16 +43,21 @@
     	        android:id="@+id/event_due"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content" 
-    	        android:layout_weight="1"
-    	        android:inputType="date"
+    	       	android:hint="Due Date(YYYY-MM-DD)"
+    	       	 android:textColor="@color/button_grey"
+    	       	
+    	       
     	        />
     	    
-    	    <EditText
-    	        android:id="@+id/event_description"
-    	        android:layout_width="match_parent"
-    	        android:layout_height="wrap_content" 
-    	         android:layout_weight="3"
-    	         />
+    	    <ImageView
+    	        android:paddingTop="10dp"
+    	        android:id="@+id/submit_event_button"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        
+    	        android:src="@drawable/add"/>
+    	    
+    	    
         
     	</LinearLayout>
     
@@ -46,7 +65,7 @@
     	    android:layout_width="match_parent"
     	    android:layout_height="match_parent" 
     	    android:id="@+id/display"
-    	    android:visibility="gone">
+    	    android:visibility="visible">
     	    
     	    <ListView
     	        android:id="@+id/event_list"

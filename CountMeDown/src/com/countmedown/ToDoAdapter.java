@@ -2,6 +2,7 @@ package com.countmedown;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import com.countmedown.R.color;
@@ -23,13 +24,13 @@ import android.widget.TextView;
 
 public class ToDoAdapter extends ArrayAdapter<Event>{
 	private final Context mContext;
-	private Event[] mArray;
+	private ArrayList<Event> mArray;
 	
 	
 	
 
 
-	public ToDoAdapter(Context context, Event[] array) {
+	public ToDoAdapter(Context context,ArrayList<Event> array) {
 		super(context, R.layout.event_row, array);
 		// TODO Auto-generated constructor stub
 		mContext = context;
@@ -48,8 +49,8 @@ public class ToDoAdapter extends ArrayAdapter<Event>{
 		 
 		 
 		 try {
-				d1 = formater.parse(mArray[position].getStartDate() ).getTime();
-				d2 = formater.parse(mArray[position].getEndDate() ).getTime();
+				d1 = formater.parse(mArray.get(position).getStartDate() ).getTime();
+				d2 = formater.parse(mArray.get(position).getEndDate() ).getTime();
 				d3 = formater.parse(formater.format(cal.getTime()) ).getTime();
 				
 			} catch (ParseException e) {
@@ -70,7 +71,7 @@ public class ToDoAdapter extends ArrayAdapter<Event>{
 		 TextView text = (TextView) view.findViewById(R.id.event_title);
 		 ProgressBar bar = (ProgressBar) view.findViewById(R.id.event_time_bar);
 		 
-		 text.setText(mArray[position].getName());
+		 text.setText(mArray.get(position).getName());
 		 
 		 int temp = dayDifference(d1, d2, d3);
 		 
@@ -117,8 +118,8 @@ public class ToDoAdapter extends ArrayAdapter<Event>{
 //		Log.d("older", Integer.toString(older));
 //		Log.d("newer", Integer.toString(newer));
 //		Log.d("current", Integer.toString(current));
-		result = 100 * ((current/(1000*60*60*24))- (older/(1000*60*60*24)));
-		result = result / ( ((newer/(1000*60*60*24)) - (older/(1000*60*60*24)) ) );
+		result = 100 * ((current/(1000*60*60*24))- ((older-86400000)/(1000*60*60*24)));
+		result = result / ( ((newer/(1000*60*60*24)) - ((older-86400000)/(1000*60*60*24)) ) );
 		
 		
 		
@@ -131,6 +132,8 @@ public class ToDoAdapter extends ArrayAdapter<Event>{
 		
 		return (int) result;
 	}
+	
+	
 	
 	
 	

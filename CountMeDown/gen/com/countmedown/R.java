@@ -1004,8 +1004,9 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int add=0x7f020057;
-        public static final int ic_launcher=0x7f020058;
-        public static final int row_bg=0x7f020059;
+        public static final int edit_bg=0x7f020058;
+        public static final int ic_launcher=0x7f020059;
+        public static final int row_bg=0x7f02005a;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1035,7 +1036,6 @@ containing a value of this type.
         public static final int edit=0x7f05003d;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
-        public static final int event_description=0x7f050040;
         public static final int event_due=0x7f05003f;
         public static final int event_list=0x7f050042;
         public static final int event_name=0x7f05003e;
@@ -1073,6 +1073,7 @@ containing a value of this type.
         public static final int showTitle=0x7f050006;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
+        public static final int submit_event_button=0x7f050040;
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
